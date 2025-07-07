@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bus Pass Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bus Pass Application Form</h1>
+
+  <form action="/submit_application" method="post">
+    <!-- Applicant Details -->
+    <section>
+      <h2>Applicant Details</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+    </section>
+
+    <!-- Pass Details -->
+    <section>
+      <h2>Pass Details</h2>
+      <label for="pass_type">Pass Type:</label>
+      <select id="pass_type" name="pass_type">
+        <option value="monthly">Monthly</option>
+        <option value="quarterly">Quarterly</option>
+        <option value="yearly">Yearly</option>
+      </select><br><br>
+
+      <label for="start_date">Start Date:</label>
+      <input type="date" id="start_date" name="start_date" required><br><br>
+    </section>
+
+    <input type="submit" value="Submit Application">
+  </form>
+
+</body>
+</html>
+
